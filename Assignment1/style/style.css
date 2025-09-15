@@ -17,3 +17,16 @@ h2, h3 {
 p { max-width: 60%;
   margin: 0 auto;
 }
+
+.content {
+  max-width: 60ch;
+  margin: 0 auto 64px;
+  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+h2, h3 { text-align: center; }
+p { line-height: 1.6; }
