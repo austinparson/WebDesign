@@ -8,15 +8,21 @@ body {
 nav {
   max-width: 100%;
   margin: 0 auto;
-  background-color: #000000;
 }
 
-nav li::marker {
+nav ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+nav li {
   display: inline-block;
-  content: "";
   margin-right: 1rem;
   vertical-align: middle;
 }
+
+nav li:: marker { content: ""; }
 
 header {
   padding: 35px 0;
