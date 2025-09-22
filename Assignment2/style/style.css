@@ -42,6 +42,5 @@ nav ul.site-nav > li::marker {
   margin-right: 1rem;
   vertical-align: middle;
 }
-nav ul.site-nav > li::marker { content: none; }
 
 ul.dagger > li::marker { content: "\2020 "; }
