@@ -7,6 +7,8 @@ body {
   font-family: Georgia, 'Times New Roman', serif;
 }
 
+li::marker { content: "\2020 "; }
+
 nav {
   max-width: 100%;
   margin: 0 auto;
@@ -48,7 +50,5 @@ li {
   font-family: Georgia, serif;
   display: list-item;
 }
-
-li::marker { content: "\2020 "; }
 
 p { line-height: 1.6; }
