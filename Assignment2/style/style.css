@@ -5,6 +5,19 @@ body {
   font-family: Georgia, 'Times New Roman', serif;
 }
 
+nav {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+nav li::marker {
+  display: inline-block;
+  content: "";
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 header {
   padding: 35px 0;
   text-align: center;
@@ -14,7 +27,10 @@ header {
 }
 
 img {
-    max-width: 100%; height: auto; display: block; margin: 16px auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
 }
 
 ul { 
@@ -28,9 +44,6 @@ li {
   display: list-item;
 }
 
-li::marker {
-  content: "\2020 "; 
-}
-
+li::marker { content: "\2020 "; }
 
 p { line-height: 1.6; }
