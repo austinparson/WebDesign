@@ -22,7 +22,7 @@ nav li {
   vertical-align: middle;
 }
 
-nav li:: marker { content: ""; }
+nav li::marker { content: ""; }
 
 header {
   padding: 35px 0;
