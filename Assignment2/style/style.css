@@ -13,6 +13,10 @@ header {
   box-shadow: 0 6px 16px #0D0D0D;
 }
 
+img {
+    max-width: 100%; height: auto; display: block; margin: 16px auto;
+}
+
 ul { 
   list-style: none; 
   padding-left: 1.25rem;
