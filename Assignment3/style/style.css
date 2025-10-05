@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0 24px;
+  box-sizing: border-box;                     
+  min-height: 100vh;
+  background: linear-gradient(180deg, #FFF8E7 0%, #714502 50%, #FCE6C9 100%);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+header {
+  padding: 35px 0;
+  text-align: center;
+  background-color: #DAA520;
+  margin: 0 0 24px;
+  box-shadow: 0 6px 16px #0D0D0D;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 16px auto;
+}
+
+ul { padding-left: 1.25rem; }
+
+li {
+  color: #2A3439;
+  font-family: Georgia, serif;
+}
+
+p { line-height: 1.6; }
+
+nav ul.site-nav {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+nav ul.site-nav > li {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+nav ul.site-nav > li::marker {
+  content: none;
+}
+
+ul.dagger > li::marker { content: "\2020 "; }
