@@ -9,7 +9,7 @@
     <nav>
         <ul class="site-nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
           <li><a href="info.html">Info</a></li>
         </ul>
     </nav>
@@ -26,6 +26,24 @@
 
             <label>Submit Your Favorite Book:</label>
             <input type="text" name="favorite-book" placeholder="Type your favorite book here">
+
+            <label>Favorite Genre:</label> <!--Dropdown label-->
+            <select name="genre">
+                <option value="classic">Classic</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="romance">Romance</option>
+            </select>
+
+            <p>Preferred Format:</p>
+                <label><input type="radio" name="format" value="print"> Print</label>
+                <label><input type="radio" name="format" value="ebook"> eBook</label>
+                <label><input type="radio" name="format" value="audiobook"> Audiobook</label>
+
+            <label>
+                <input type="checkbox" name="subscribe" value="yes">
+                Subscribe to our monthly book club newsletter
+            </label>
 
             <button type="submit">Submit</button>
         </fieldset>
