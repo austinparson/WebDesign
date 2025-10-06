@@ -197,3 +197,9 @@ th {
   /* three images per row (3 x 30% + gaps) */
   height: auto;
 }
+
+#gallery img:hover {
+  transform: scale(1.10);
+  /* three images per row (3 x 30% + gaps) */
+  box-shadow: 0 4px 12px #0D0D0D;
+}
