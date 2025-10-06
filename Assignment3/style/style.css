@@ -1,10 +1,16 @@
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
+  font-family: "Quintessential", serif;
   margin: 0;
   padding: 0 24px;
   box-sizing: border-box;
   min-height: 100vh;
   background: linear-gradient(180deg, #FFF8E7 0%, #714502 50%, #FCE6C9 100%);
-  font-family: Georgia, 'Times New Roman', serif;
 }
 
 header {
@@ -28,7 +34,7 @@ ul {
 
 li {
   color: #2A3439;
-  font-family: Georgia, serif;
+  font-family: "Quintessential", serif;
 }
 
 p {
