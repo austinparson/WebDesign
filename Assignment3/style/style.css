@@ -48,3 +48,29 @@ nav ul.site-nav > li::marker {
 }
 
 ul.dagger > li::marker { content: "\2020 "; }
+
+form {
+  background-color: #f9f7f1; /* soft, warm background */
+  padding: 20px; /* space inside the form */
+  border-radius: 10px; /* smooth, rounded corners */
+  border: 1px solid #ccc; /* light gray border */
+  width: 75%; /* controls how wide it is */
+  margin: 0 auto; /* centers the form on the page */
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block; /* forces the label to be on its own line */
+  margin-top: 15px; /* adds space above each new form field */
+  font-weight: bold;
+}
