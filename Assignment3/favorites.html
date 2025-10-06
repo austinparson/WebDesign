@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="" en">
+
 <head>
     <meta charset="UTF-8">
     <title>Don Quixote Homepage</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
     <nav>
         <ul class="site-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="favorites.html">Favorites</a></li>
-          <li><a href="info.html">Info</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="info.html">Info</a></li>
         </ul>
     </nav>
+
+    <h2>My Favorite Books</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Don Quixote</td>
+                <td>Miguel de Cervantes</td>
+                <td>Classic</td>
+            </tr>
+        </tbody>
+    </table>
 
     <form>
         <fieldset>
             <legend>Favorite Book Survey</legend>
 
             <label>Your Name:</label>
-            <input type="text" name="name" placeholder="e.g. Elizabeth Bennet">
+            <input type="text" name="name" placeholder="e.g. Sancho Panza">
 
             <label>Email Address:</label>
             <input type="email" name="email" placeholder="e.g. liz@longbourn.com">
@@ -36,9 +57,9 @@
             </select>
 
             <p>Preferred Format:</p>
-                <label><input type="radio" name="format" value="print"> Print</label>
-                <label><input type="radio" name="format" value="ebook"> eBook</label>
-                <label><input type="radio" name="format" value="audiobook"> Audiobook</label>
+            <label><input type="radio" name="format" value="print"> Print</label>
+            <label><input type="radio" name="format" value="ebook"> eBook</label>
+            <label><input type="radio" name="format" value="audiobook"> Audiobook</label>
 
             <label>
                 <input type="checkbox" name="subscribe" value="yes">
@@ -49,4 +70,5 @@
         </fieldset>
     </form>
 </body>
+
 </html>

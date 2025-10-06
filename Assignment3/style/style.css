@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0 24px;
-  box-sizing: border-box;                     
+  box-sizing: border-box;
   min-height: 100vh;
   background: linear-gradient(180deg, #FFF8E7 0%, #714502 50%, #FCE6C9 100%);
   font-family: Georgia, 'Times New Roman', serif;
@@ -22,40 +22,52 @@ img {
   margin: 16px auto;
 }
 
-ul { padding-left: 1.25rem; }
+ul {
+  padding-left: 1.25rem;
+}
 
 li {
   color: #2A3439;
   font-family: Georgia, serif;
 }
 
-p { line-height: 1.6; }
-
-nav ul.site-nav {
-  list-style:none;
-  padding:0;
-  margin:0;
+p {
+  line-height: 1.6;
 }
 
-nav ul.site-nav > li {
+nav ul.site-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.site-nav>li {
   display: inline-block;
   margin-right: 1rem;
   vertical-align: middle;
 }
 
-nav ul.site-nav > li::marker {
+nav ul.site-nav>li::marker {
   content: none;
 }
 
-ul.dagger > li::marker { content: "\2020 "; }
+ul.dagger>li::marker {
+  content: "\2020 ";
+}
 
 form {
-  background-color: #f9f7f1; /* soft, warm background */
-  padding: 20px; /* space inside the form */
-  border-radius: 10px; /* smooth, rounded corners */
-  border: 1px solid #ccc; /* light gray border */
-  width: 75%; /* controls how wide it is */
-  margin: 0 auto; /* centers the form on the page */
+  background-color: #f9f7f1;
+  /* soft, warm background */
+  padding: 20px;
+  /* space inside the form */
+  border-radius: 10px;
+  /* smooth, rounded corners */
+  border: 1px solid #ccc;
+  /* light gray border */
+  width: 75%;
+  /* controls how wide it is */
+  margin: 0 auto;
+  /* centers the form on the page */
 }
 
 fieldset {
@@ -70,23 +82,25 @@ legend {
 }
 
 label {
-  display: block; /* forces the label to be on its own line */
-  margin-top: 15px; /* adds space above each new form field */
+  display: block;
+  /* forces the label to be on its own line */
+  margin-top: 15px;
+  /* adds space above each new form field */
   font-weight: bold;
 }
 
 input[type="text"],
-    input[type="email"],
-    select {
-        width: 100%;
-        margin: 0 auto;
-        padding: 8px;
-        margin-top: 5px;
-        font-size: 1rem;
-        border: 1px solid #aaa;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
+input[type="email"],
+select {
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
 
 button {
   margin-top: 20px;
@@ -101,4 +115,42 @@ button {
 
 button:hover {
   background-color: #7a564f;
+}
+
+h2 {
+  text-align: center;
+  /* centers the table heading */
+}
+
+table {
+  width: 78%;
+  /* makes the table a bit narrower than full-width */
+  margin: 0 auto;
+  /* centers the table horizontally */
+  margin-bottom: 30px;
+  /* adds space below the table */
+  background-color: #fdfdfd;
+  /* soft background for readability */
+  border: 1px solid #ccc;
+  /* light gray outer border */
+  border-radius: 4px;
+  /* slightly rounded corners */
+}
+
+th, td {
+  padding: 12px;
+  /* adds space inside each cell */
+  border: 1px solid #ccc;
+  /* gives all cells a light border */
+  text-align: left;
+  /* aligns content to the left for easier reading */
+}
+
+th {
+  background-color: #f5f5f5;
+  /* light gray background for contrast */
+  font-weight: bold;
+  /* makes header text stand out */
+  color: #5a3e36;
+  /* a warm brown color for an elegant touch */
 }
