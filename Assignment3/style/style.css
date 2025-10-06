@@ -203,3 +203,28 @@ th {
   /* three images per row (3 x 30% + gaps) */
   box-shadow: 0 4px 12px #0D0D0D;
 }
+
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  nav ul.site-nav>li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  header,
+  .chapter,
+  footer {
+    padding: 10px;
+    /* Adds padding to header, .chapter, AND footer content */
+  }
+}
