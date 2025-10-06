@@ -150,7 +150,8 @@ table {
   /* slightly rounded corners */
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   /* adds space inside each cell */
   border: 1px solid #ccc;
@@ -166,4 +167,33 @@ th {
   /* makes header text stand out */
   color: #5a3e36;
   /* a warm brown color for an elegant touch */
+}
+
+.chapter {
+  background-color: #af6a03;
+  padding: 10px;
+  border: 5px solid #2d2d2d;
+  margin-top: 10px;
+  font-family: "Quintessential", serif;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* spacing between images */
+  max-width: 800px;
+  /* optional: keeps the grid from stretching too far */
+  margin: 0 auto;
+  row-gap: 10px;
+  /* vertical spacing */
+  column-gap: 10px;
+  /* horizontal spacing */
+}
+
+#gallery img {
+  width: 30%;
+  /* three images per row (3 x 30% + gaps) */
+  height: auto;
 }
