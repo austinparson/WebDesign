@@ -55,6 +55,13 @@ ul.dagger>li::marker {
   content: "\2020 ";
 }
 
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
 form {
   background-color: #f9f7f1;
   /* soft, warm background */
