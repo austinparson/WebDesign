@@ -230,7 +230,19 @@ th {
     font-family: "Quintessential", serif;
   }
 
-  nav ul.site-nav a,
+  nav .site-nav a {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.25s, color 0.25s, transform 0.2s;
+  }
+  
+  nav .site-nav a:hover {
+    background: #6e6e6e;
+    transform: translateY(-1px);
+  }
+
   th,
   h1,
   h2,
