@@ -55,9 +55,14 @@ nav ul.site-nav a {
   display: inline-block;
   font-size: 1.25rem;
   line-height: 1;
-  padding: .25rem 0;
-  text-decoration: none;
+  border-radius: 0.4rem;
+  transition: background-color 0.25s, color 0.25s, transform 0.2s;
   color: #0f0000;
+}
+
+nav .site-nav a:hover {
+  background: #6e6e6e;
+  transform: translateY(-1px);
 }
 
 nav ul.site-nav>li {
@@ -161,7 +166,6 @@ table {
   /* slightly rounded corners */
 }
 
-th,
 td {
   padding: 12px;
   /* adds space inside each cell */
@@ -230,26 +234,8 @@ th {
     font-family: "Quintessential", serif;
   }
 
-  nav .site-nav a {
-    display: inline-block;
-    font-size: 1.25rem;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.4rem;
-    transition: background-color 0.25s, color 0.25s, transform 0.2s;
-  }
-  
-  nav .site-nav a:hover {
-    background: #6e6e6e;
-    transform: translateY(-1px);
-  }
-
-  th,
-  h1,
-  h2,
-  h3,
-  li,
-  p {
-    font-family: "Quintessential", serif;
+  nav ul.site-nav a {
+    font-size: 1.05rem;
   }
 
   header,
