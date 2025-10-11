@@ -178,6 +178,7 @@ th {
   /* makes header text stand out */
   color: #5a3e36;
   /* a warm brown color for an elegant touch */
+  font-family: "Quintessential", serif;
 }
 
 .chapter {
@@ -226,6 +227,7 @@ th {
   nav ul.site-nav {
     padding: .75rem 1rem;
     gap: 1rem;
+    font-family: "Quintessential", serif;
   }
 
   nav ul.site-nav a,
