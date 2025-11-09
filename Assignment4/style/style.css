@@ -1,19 +1,14 @@
 .blog-preview {
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
 
-.date {
+.date {}
 
-}
+.post-title {}
 
-.post-title {
+.post-preview {}
 
-}
-
-.post-preview {
-
-}
-
-.read-more {
-
-}
+.read-more {}
