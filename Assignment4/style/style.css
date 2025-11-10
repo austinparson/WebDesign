@@ -5,6 +5,12 @@
     gap: 20px;
 }
 
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .date {}
 
 .post-title {}
