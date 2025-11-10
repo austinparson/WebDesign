@@ -21,7 +21,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body { background-color: #e4d3be; }
+.blog-body { background-color: #e4d3be; }
 
 .date {
     font-size: 0.8rem;
