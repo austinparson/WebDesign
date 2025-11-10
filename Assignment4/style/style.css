@@ -21,7 +21,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.blog-body { background-color: #e4d3be; }
+.blog-body {
+    background-color: #e4d3be;
+}
 
 .date {
     font-size: 0.8rem;
@@ -63,7 +65,23 @@
 
 .item {
     min-height: 200px;
-    padding: 80px 20px;
     border-radius: 8px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
     background-color: #90dcec;
+}
+
+.item img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.item p {
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
