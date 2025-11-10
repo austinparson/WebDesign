@@ -54,12 +54,16 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     padding: 20px;
+    margin: 0;
+}
+
+.gallery-body {
     background-color: #3175db;
 }
 
 .item {
     min-height: 200px;
-    align-items: center;
-    justify-content: center;
+    padding: 80px 20px;
+    border-radius: 8px;
     background-color: #90dcec;
 }
