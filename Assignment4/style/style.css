@@ -48,3 +48,17 @@ body { background-color: #e4d3be; }
     color: #23332f;
     margin-top: 10px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #3175db;
+}
+
+.item {
+    padding: 5px;
+    align-items: center;
+    background-color: #90dcec;
+}
