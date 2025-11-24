@@ -1,3 +1,8 @@
+a:focus, button:focus, input:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -39,6 +44,16 @@
 
 .blog-body {
     background-color: #b0ecf4;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #6666ff;
+    max-width: 400px;
+    margin-bottom: 20px;
 }
 
 .date {
@@ -147,4 +162,12 @@
     /* Adds space between the icons */
     vertical-align: middle;
     /* Keeps icons visually aligned with any text nearby */
+}
+
+@media (max-width: 600px) {
+    /* Styles for mobile screens */
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    /* Styles for tablets */
 }
