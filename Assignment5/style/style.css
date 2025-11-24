@@ -1,6 +1,14 @@
-a:focus, button:focus, input:focus {
+a:focus,
+button:focus,
+input:focus {
     outline: 2px solid #4a90e2;
     outline-offset: 2px;
+}
+
+.page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .nav {
@@ -46,7 +54,14 @@ a:focus, button:focus, input:focus {
     background-color: #b0ecf4;
 }
 
+.card-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
 .card {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -84,7 +99,7 @@ a:focus, button:focus, input:focus {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
     margin: 0;
@@ -164,10 +179,37 @@ a:focus, button:focus, input:focus {
     /* Keeps icons visually aligned with any text nearby */
 }
 
+.featured-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    align-items: start;
+}
+
+.featured-section .blog-preview {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    gap: 10px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 @media (max-width: 600px) {
     /* Styles for mobile screens */
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
     /* Styles for tablets */
+}
+
+@media (max-width: 600px) {
+    .card-section {
+        flex-direction: column;
+    }
 }
