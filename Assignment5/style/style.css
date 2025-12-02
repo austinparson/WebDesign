@@ -192,35 +192,6 @@ input:focus {
     /* Keeps icons visually aligned with any text nearby */
 }
 
-.right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.right-column .card {
-    max-width: 100%;
-    margin-bottom: 0;
-    background-color: #6666ff;
-    color: #ffffff;
-    border-radius: 12px;
-    padding: 16px;
-}
-
-.right-column .card img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
 @media (max-width: 600px) {}
 
 @media (min-width: 600px) and (max-width: 1024px) {}
