@@ -28,24 +28,24 @@ input:focus {
 }
 
 .blog-preview {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.7fr);
-  gap: 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.7fr);
+    gap: 20px;
 
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 20px 40px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px 40px;
 
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .blog-preview img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .blog-text {
@@ -60,30 +60,28 @@ input:focus {
 }
 
 .card-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px 40px;
 }
 
 .card {
-  background-color: #6666ff;
-  border-radius: 8px;
-  padding: 20px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    background-color: #6666ff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 4px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .date {
@@ -200,23 +198,6 @@ input:focus {
     gap: 20px;
 }
 
-
-
-@media (max-width: 600px) {
-    /* Styles for mobile screens */
-}
-
-@media (min-width: 600px) and (max-width: 1024px) {
-    /* Styles for tablets */
-}
-
-@media (max-width: 600px) {
-    .card-section {
-        flex-direction: column;
-    }
-}
-
-
 .right-column {
     display: flex;
     flex-direction: column;
@@ -238,4 +219,27 @@ input:focus {
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {}
+
+@media (min-width: 600px) and (max-width: 1024px) {}
+
+@media (max-width: 600px) {
+    .card-section {
+        flex-direction: column;
+    }
+}
+
+/* new flexbox.html media rules */
+@media (max-width: 900px) {
+    .card-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-section {
+        grid-template-columns: 1fr;
+    }
 }
