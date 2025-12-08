@@ -86,28 +86,28 @@ input:focus {
 
 .blog-preview,
 .card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .blog-preview:hover,
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .blog-preview img,
 .card img {
-  transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .blog-preview,
 .card {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .blog-preview:hover img,
 .card:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .date {
@@ -218,16 +218,63 @@ input:focus {
 }
 
 .social-icons img {
-  width: 22px;
-  margin-right: 10px;
-  vertical-align: middle;
-  opacity: 0.8;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+    width: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
 .social-icons img:hover {
-  transform: scale(1.2);
-  opacity: 1;
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* FinalProject rules */
+#popup {
+    /* brings the popup to the front */
+    z-index: 1000;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+
+    background-color: #e0e2e5;
+    padding: 10px;
+}
+
+#popup.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#openPopup {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    /* start at regular size   */
+    0% {
+        transform: scale(1);
+    }
+
+    /* grow slightly in middle */
+    50% {
+        transform: scale(1.03);
+    }
+
+    /* return to normal size   */
+    100% {
+        transform: scale(1);
+    }
+
 }
 
 @media (max-width: 600px) {}
