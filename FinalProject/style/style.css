@@ -280,8 +280,49 @@ input:focus {
 a:focus,
 button:focus,
 input:focus {
-  outline: 2px solid #4a90e2;
-  outline-offset: 2px;
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+/* Parallax Rules */
+.parallax-banner-scroll {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* start position */
+    background-attachment: scroll;
+    /* allow movement */
+    position: relative;
+}
+
+.parallax-banner {
+    height: 500px;
+    background-size: cover;
+    background-position: bottom;
+
+    /* parallax */
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax-banner-overlay {
+    height: 100%;
+    width: 100%;
+
+    /* optional soft darkening */
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.parallax-banner-content {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #faf7e8;
+    text-shadow: 0 0 10px #000;
 }
 
 @media (max-width: 600px) {}
@@ -304,5 +345,17 @@ input:focus {
 @media (max-width: 600px) {
     .card-section {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Parallax fix for mobile */
+@media (max-width: 768px) {
+    .parallax-banner {
+        background-attachment: scroll;
+        height: 320px;
+    }
+
+    .parallax-banner-content h1 {
+        font-size: 2rem;
     }
 }

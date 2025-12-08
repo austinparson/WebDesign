@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- This script controls my parallax movement -->
+<script>
+    let latestScroll = 0;
+    window.addEventListener('scroll', () => {
+        latestScroll = window.scrollY;
+    });
+    function parallaxLoop() {
+        const banners = document.querySelectorAll('.parallax-banner-scroll');
+
+        banners.forEach(banner => {
+            let offset = latestScroll * 0.3;
+            banner.style.backgroundPositionY = `${offset}px`;
+        });
+        requestAnimationFrame(parallaxLoop);
+    }
+    parallaxLoop();
+</script>
+
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -57,6 +75,13 @@
         <h1>Visible Title</h1>
     </header>
     <main>
+        <section class="parallax-banner-scroll" style="background-image: url('images/tesla-1899.jpg');">
+            <div class="parallax-banner-overlay">
+                <div class="parallax-banner-content">
+                    <h1>Optional Heading Here</h1>
+                </div>
+            </div>
+        </section>
         <h3>Join our list</h3>
         <button id="openPopup">Sign Up</button>
         <div id="popup">
