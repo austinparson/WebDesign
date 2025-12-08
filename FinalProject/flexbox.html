@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="blog-body">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="flexbox.html">Flexbox</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li> <!-- I added this entire list item to Bootstrap's default code. Add more if needed! -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="grid.html">Grid</a></li>
+                                <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="blog-preview">
+        <img src="images/assign4_background.jpg" alt="Site Backround.">
+
+        <div class="blog-text">
+            <p class="date">November 9, 2025</p>
+
+            <h2 class="post-title">Designing with Flexbox: Simplicity Through Structure</h2>
+
+            <p class="post-preview">
+                Flexbox is one of the most powerful tools in modern web design, allowing designers to align, space,
+                and
+                center content with ease. In this post, we’ll explore how Flexbox simplifies layouts that once
+                required
+                endless floats and margins—and how a few key properties can make your designs more fluid and
+                responsive.
+            </p>
+
+            <a href="blog-post.html" class="read-more">Read More</a>
+        </div>
+    </div>
+    <div class="blog-preview">
+        <img src="images/assign4_background.jpg" alt="Site Backround.">
+
+        <div class="blog-text">
+            <p class="date">November 9, 2025</p>
+
+            <h2 class="post-title">Designing with Flexbox: Simplicity Through Structure</h2>
+
+            <p class="post-preview">
+                Flexbox is one of the most powerful tools in modern web design, allowing designers to align, space,
+                and
+                center content with ease. In this post, we’ll explore how Flexbox simplifies layouts that once
+                required
+                endless floats and margins—and how a few key properties can make your designs more fluid and
+                responsive.
+            </p>
+
+            <a href="blog-post.html" class="read-more">Read More</a>
+        </div>
+    </div>
+    <div class="blog-preview">
+        <img src="images/assign4_background.jpg" alt="Site Backround.">
+
+        <div class="blog-text">
+            <p class="date">November 9, 2025</p>
+
+            <h2 class="post-title">Designing with Flexbox: Simplicity Through Structure</h2>
+
+            <p class="post-preview">
+                Flexbox is one of the most powerful tools in modern web design, allowing designers to align, space,
+                and
+                center content with ease. In this post, we’ll explore how Flexbox simplifies layouts that once
+                required
+                endless floats and margins—and how a few key properties can make your designs more fluid and
+                responsive.
+            </p>
+
+            <a href="blog-post.html" class="read-more">Read More</a>
+        </div>
+    </div>
+    <div class="card-section">
+        <div class="card">
+            <h3>Coronal Mass Ejection:</h3>
+
+            <img src="images/cme.jpg" alt="The Sun.">
+
+            <p>
+                CMEs are large eruptions of magnetized plasma from the Sun!
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Coronal Mass Ejection:</h3>
+
+            <img src="images/cme.jpg" alt="The Sun.">
+
+            <p>
+                CMEs are large eruptions of magnetized plasma from the Sun!
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Coronal Mass Ejection:</h3>
+
+            <img src="images/cme.jpg" alt="The Sun.">
+
+            <p>
+                CMEs are large eruptions of magnetized plasma from the Sun!
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <img src="images/x_logo.svg" alt="X logo">
+            <img src="images/the_gram.svg" alt="Instagram logo">
+            <img src="images/youtube_logo.svg" alt="YouTube logo">
+            <img src="images/linkedin_logo.svg" alt="LinkedIn logo">
+        </div>
+
+        <ul class="use-cases">
+            <li>UI Design</li>
+            <li>UX Design</li>
+            <li>Wireframing</li>
+            <li>Brainstorming</li>
+        </ul>
+
+        <ul class="explore">
+            <li>Design</li>
+            <li>Prototyping</li>
+            <li>FigJam</li>
+            <li>Design Systems</li>
+        </ul>
+
+        <ul class="resources">
+            <li>Blog</li>
+            <li>Best Practices</li>
+            <li>Support</li>
+            <li>Resource Library</li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
