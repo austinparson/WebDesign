@@ -1,30 +1,25 @@
-let y = 0; // starting at the top of the canvas
+// Reveal cards on scroll
+const revealItems = document.querySelectorAll(".reveal-on-scroll");
 
-const canvas = document.getElementById("myCanvas");
-const ctx = canvas.getContext("2d"); // our drawing “brush”
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
 
-ctx.fillStyle = "rgba(50, 142, 200, 0.8)";
-ctx.shadowColor = "rgba(4, 211, 111, 0.8)";
-ctx.shadowBlur = 20;
+revealItems.forEach(el => observer.observe(el));
 
-ctx.beginPath();
-ctx.arc(150, 150, 40, 0, Math.PI * 2);
-ctx.fill();
+// Optional parallax: gently shift background as you scroll
+const hero = document.getElementById("hero");
 
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Add this line that erases the previous frame
-
-    ctx.beginPath();
-    ctx.arc(150, y, 40, 0, Math.PI * 2); // use y instead of 150 so it moves along the vertical axis
-    ctx.fill();
-
-    y += 1; // tiny downward movement
-    if (y > canvas.height) y = 0; // Add this line to make the animation loop forever
+function updateParallax(){
+  if (!hero) return;
+  const y = window.scrollY;
+  hero.style.backgroundPosition = `center ${y * 0.25}px`;
 }
 
-function loop() {
-    draw();
-    requestAnimationFrame(loop);
-}
-
-loop(); // start the animation
+window.addEventListener("scroll", updateParallax, { passive: true });
+updateParallax();
