@@ -12,6 +12,7 @@ body {
     color: var(--text);
 }
 
+/* Hide this guy until someone tabs */
 .skip-link {
     position: absolute;
     left: -999px;
