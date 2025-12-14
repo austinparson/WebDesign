@@ -152,10 +152,10 @@ body {
 }
 
 .about-fact {
+    background: rgba(11, 122, 227, 0.65);
     padding: 12px 12px;
     border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 14px;
-    background: rgba(255, 255, 255, 0.65);
 }
 
 .about-fact-label {
