@@ -51,6 +51,11 @@ body {
     background-attachment: fixed;
 }
 
+.hero-parallax--about {
+    min-height: 42vh;
+    background-image: url("../images/lake.jpg");
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -139,6 +144,47 @@ body {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.about-facts {
+    display: grid;
+    gap: 12px;
+}
+
+.about-fact {
+    padding: 12px 12px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+.about-fact-label {
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: rgba(71, 85, 105, 1);
+    margin-bottom: 2px;
+}
+
+.about-fact-value a {
+    color: inherit;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-pill {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    background: rgba(255, 255, 255, 0.75);
+    font-weight: 700;
+    font-size: 14px;
 }
 
 @keyframes fadeUp {
